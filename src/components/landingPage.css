@@ -1,101 +1,78 @@
 /* src/styles/LandingPage.css */
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(35deg, #3498db, #9b59b6);
-  }
-  
-  .content-container {
-    width: 90%;
-    max-width: 800px;
-    text-align: center;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* background-color: #fff; */
-    transition: transform 0.3s ease-in-out;
-    /* margin: 20px; */
-    /* border: 1px solid #ddd; Add border for a subtle separation from the background */
-  }
-  
-  .landing-container:hover .content-container {
-    transform: scale(1.02);
-  }
-  
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    /* color: #fff; */
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    font-size:4rem;
-    font-weight: 700;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ecf0f1;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 2.4rem;
-    color: #c7c2bd;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000; /* Change the background to dark theme */
+}
 
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-  
-  /* Add hover effect for a subtle interaction */
-  .content-container:hover {
-    box-shadow: 0 15px 30px rgba(3, 29, 60, 0.3);
-  }
+.content-container {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Change the shadow color to white for dark theme */
+  background-color: #000; /* Change the background to dark theme */
+  transition: transform 0.3s ease-in-out;
+  color: #fff; /* Change the text color to white for dark theme */
+}
 
-/* src/styles/landingPage.css */
-/* src/styles/landingPage.css */
-/* src/styles/landingPage.css */
-/* src/styles/landingPage.css */
-/* src/styles/landingPage.css */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff; /* Change the text color to white for dark theme */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 2rem; /* Change the font size to match the design */
+  font-weight: 700;
+  color: #fff; /* Change the text color to white for dark theme */
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.5rem; /* Change the font size to match the design */
+  color: #fff; /* Change the text color to white for dark theme */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
 .cta-button {
-    background: linear-gradient(to right, #ffcc80, #ffab40); /* Custom gradient background */
-    color: #2c3e50; /* Custom text color */
-    padding: 10px 20px;
+  background: #fff; /* Change the button color to white for dark theme */
+  color: #000; /* Change the text color to black for dark theme */
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #ccc; /* Change the hover color to light grey for dark theme */
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
     font-size: 1rem;
-    margin-top: 20px;
-    margin-right: 10px; /* Add margin between buttons */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   }
-  
-  .cta-button:hover {
-    background: linear-gradient(to right, #ffab40, #ff8c1a); /* Custom gradient for hover */
-    color: #2c3e50; /* Custom text color for hover */
-  }
-  
-  
-  
-  
-  
-  @media screen and (max-width: 768px) {
-    .content-container {
-      padding: 30px;
-    }
-  
-    .title {
-      font-size: 2.5rem;
-    }
-  
-    .subtitle {
-      font-size: 1.2rem;
-    }
-  
-    .description {
-      font-size: 1rem;
-    }
-  }
-  
+}
